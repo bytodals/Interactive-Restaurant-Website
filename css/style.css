@@ -1,0 +1,362 @@
+:root {
+    --base: #869981;  /* base */
+    --base2: #42573f; 
+    --primary: #546d4c;  /* Sage Green */
+    --text: #191d18;  /* dark text */
+    --light-text: #dddd; 
+    --accent: #a0c0984d;  
+    --accent2: #1b1b1b73;
+    --highlight: #1d5020;  
+    --shadow: #2f302f2c; 
+}
+
+body {
+    background-color: var(--text);
+    color: var(--light-text);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+h1 {
+    font-family: 'Merriweather';
+    color: var(--primary);
+    font-size: 80px;
+    text-shadow: 0px 2px 2px var(--text);
+}
+
+h2 {
+    font-family: 'Merriweather';
+    font-size: 60px;
+    color: var(--base);
+    text-shadow: 2px 2px var(--text);
+    text-align: center;
+}
+
+
+
+p {
+    font-size: 20px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titles {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.logonav {
+    position: relative;
+    background-image:url("/images/header2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.logonav .content {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    text-align: center;
+
+}
+
+
+.logo1 {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 30vh;
+}
+
+.infosection {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width:100%; 
+    padding-bottom: 2vh;;
+    font-weight: lighter;
+    color: var(--light-text);
+    box-shadow: 0px 0px 5px rgba(8, 12, 8, 0.5),
+}
+
+.infosection p {
+    max-width: 60%;
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+
+.navbar a:hover {
+    color: var(--highlight);
+}
+
+.navbar ul li a {
+    font-family: "Merriweather";
+    color: var(--primary);
+    text-shadow: 0px 2px 2px var(--text);
+    font-weight: "bold";
+    font-size: 32px;
+    padding: 10px;
+}
+
+.circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    gap: 10px;
+}
+
+.circles .img {
+    margin-top: 10vh;
+    padding:10px;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+button {
+    font-size: 22px;
+    font-family: "inter";
+    color: var(--light-text);
+    background-color: var(--shadow);
+    box-shadow: 0px 10px 10px var(--text);
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+#menu-container {
+    display: none;
+    margin-top: 10px;
+}
+
+
+
+.menu-item {
+    background: var(--primary);
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.description {
+    display: none;
+    color: var(--text);
+    font-weight: lighter;
+}
+
+#buffet-info {
+    display:none;
+    list-style-type: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+#buffet-info ul {
+    font-size: 20px;
+    font-weight: light;
+    color: var(--text);
+    background-color: var(--light-text);
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--shadow);
+    color: var(--base);
+    padding-top: 8vh;
+    margin-top: 20px;
+    padding-bottom: 20vh;
+    display: grid;
+    flex-direction: row;
+    gap: 5px;
+    object-fit:cover;
+    min-width:auto;
+    min-height: max-content;
+}
+
+
+@media (max-width: 1500px) {
+
+.logonav {
+margin-top: 10%;
+transition: 0.7ms ease;
+}
+
+.infosection p {
+    max-width: 75%;
+    transition: 0.7ms ease;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 19px;
+}
+}
+
+@media (max-width: 1200px) {
+
+.infosection p {
+    max-width: 85%;
+    transition: 0.2ms ease;
+}
+
+.navbar ul li a {
+    font-size: 28px;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+
+h2 {
+    font-size: 38px;
+}
+
+p {
+    font-size: 18px;
+}}
+
+@media (max-width: 768px) {
+
+
+h1 {
+    font-size: 42px;
+}
+
+
+h2 {
+    font-size: 26px;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+.background-image {
+    object-fit:contain;
+}
+
+
+header {
+    height: 100vh; 
+}
+
+#about {
+    font-size: 1.2rem; 
+    margin: 5px;
+}
+
+.navbar ul {
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.navbar ul li a {
+    font-size: 24px;
+}
+
+.circles img {
+    width: 100%;
+}}
+
+@media (max-width: 480px) {
+
+
+h1 {
+    font-size: 36px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.logo1 {
+    width: 100%; 
+}
+
+#about {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    
+}
+
+.infosection p {
+    max-width: 100%;
+    transition: 0.2ms ease;
+}}

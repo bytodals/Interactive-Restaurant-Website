@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Eldritch Table</title>
-    <link rel="stylesheet" href="\style.css\stylesheet.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="script.js"></script>
 </head>
 <body>
 
 
     <header class="logonav">
-        <h1 class="logo1">The Eldritch Table</h1>
-            <section id="about" class="isection">
-                <p>A mystical dining experience where the supernatural meets fine cuisine.
-                    Hidden within the veils of reality, The Eldritch Table was founded centuries ago by enigmatic beings who sought to bridge the mortal world with the arcane. Legends whisper that our restaurant first appeared at the crossroads of time, serving entities from realms beyond human comprehension.
-                    <br>
-                    <br>
-                    Today, we continue the tradition of crafting exquisite meals infused with supernatural flavors. Our chefs, trained in both the culinary and the occult arts, use rare and mystical ingredients to create dishes that tantalize both the senses and the soul. Whether you're a wandering specter, an ancient deity, or simply a mortal with a taste for the unknown, you will find a place at our table.
-                    Step inside, let the candlelight flicker, and prepare for a dining experience beyond time and space.
-                </p>
-            </section>
-            <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#buffet">Lunchbuffet</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <h1 class="logo1">The Eldritch Table</h1>
+        <section id="about" class="infosection">
+            <p>A mystical dining experience where the supernatural meets fine cuisine.
+            Hidden within the veils of reality, The Eldritch Table was founded centuries ago by enigmatic beings who sought to bridge the mortal world with the arcane. Legends whisper that our restaurant first appeared at the crossroads of time, serving entities from realms beyond human comprehension.
+            <br>
+            <br>
+            Today, we continue the tradition of crafting exquisite meals infused with supernatural flavors. Our chefs, trained in both the culinary and the occult arts, use rare and mystical ingredients to create dishes that tantalize both the senses and the soul. Whether you're a wandering specter, an ancient deity, or simply a mortal with a taste for the unknown, you will find a place at our table.
+            Step inside, let the candlelight flicker, and prepare for a dining experience beyond time and space.
+            </p>
+        </section>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#menuSection">menu</a></li>
+            <li><a href="#buffet">buffet</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
     </header>
-    
+
+    <section class="circles">
+        <img src="/images/Frame 2.jpg">
+        <img src="/images/Frame 3.jpg">
+        <img src="/images/Frame 4.jpg">
+    </section>
     
     <section id="menuSection" class="section">
-            <h2 class="titles">Menu</h2>
-            <button class="menu-Button" onclick="toggleMenu()">open menu</button>
+            <h2 class="titles">menu</h2>
+            <button id="menu-toggle" onclick="toggleMenu()">open</button>
         <div id="menu-container">
             <div class="filters">
                 <button onclick="filterMenu('drinks')">Drinks</button>
                 <button onclick="filterMenu('starters')">Starters</button>
                 <button onclick="filterMenu('mains')">Main Courses</button>
                 <button onclick="filterMenu('desserts')">Desserts</button>
-
         <div id="menu-items">
             <div class="menu-item drinks" onclick="toggleDescription(this)">
                 <strong>Elixir of Eternal Night - $22</strong>
@@ -57,31 +60,44 @@
             </div>
             <div class="menu-item drinks" onclick="toggleDescription(this)">
                 <strong>Fae Fire Mead- $13</strong>
-                <p class="description" style="display:none;">Golden honey mead infused with mystical emberberries</p>
+                <p class="description" style="display:none;">Golden honey mead infused with mystical emberberries
+                <br> Contains: Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
             <div class="menu-item starters" onclick="toggleDescription(this)">
                 <strong>Eldritch Tendrils - $11</strong>
-                <p class="description" style="display:none;">Charred baby squid tentacles marinated in abyssal ink and ghost pepper essence</p>
+                <p class="description" style="display:none;">Charred baby squid tentacles marinated in abyssal ink and ghost pepper essence
+                <br> Contains: Seafood <i class="fa-solid fa-shrimp"></i>
+                </p>
             </div>
             <div class="menu-item starters" onclick="toggleDescription(this)">
                 <strong>Howling Woods Bruschetta - $13</strong>
-                <p class="description" style="display:none;">Black truffle-infused mushroom mix over toasted sourdough with spectral cheese shavings</p>
+                <p class="description" style="display:none;">Black truffle-infused mushroom mix over toasted sourdough with spectral cheese shavings
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
             <div class="menu-item starters" onclick="toggleDescription(this)">
                 <strong>Veil of the Forgotten - $15</strong>
-                <p class="description" style="display:none;">Smoky roasted bone marrow served with dark rye crostini and a drizzle of cursed herb oil</p>
+                <p class="description" style="display:none;">Smoky roasted bone marrow served with gluten free crostini and a drizzle of cursed herb oil
+                </p>
             </div>
             <div class="menu-item starters" onclick="toggleDescription(this)">
                 <strong>Wraith’s Charcuterie - $20</strong>
-                <p class="description" style="display:none;">A selection of haunted cheeses, spectral meats, and cursed berry preserves</p>
+                <p class="description" style="display:none;">A selection of haunted cheeses, spectral meats, and cursed berry preserves
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
             <div class="menu-item mains" onclick="toggleDescription(this)">
                 <strong>Ghoul’s Delight Tartlets - $18</strong>
-                <p class="description" style="display:none;">Savory pastries filled with enchanted mushrooms and ghostly cheese</p>
+                <p class="description" style="display:none;">Savory pastries filled with enchanted mushrooms and ghostly cheese 
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
             <div class="menu-item mains" onclick="toggleDescription(this)">
                 <strong>Netherworld Risotto - $22</strong>
-                <p class="description" style="display:none;">Creamy risotto cooked in squid ink with a touch of stardust</p>
+                <p class="description" style="display:none;">Creamy risotto cooked in squid ink with a touch of stardust
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i> Seafood <i class="fa-solid fa-shrimp"></i>
+                </p>
             </div>
             <div class="menu-item mains" onclick="toggleDescription(this)">
                 <strong>Cursed Raven Steak - $25</strong>
@@ -89,30 +105,38 @@
             </div>
             <div class="menu-item mains" onclick="toggleDescription(this)">
                 <strong>The Eldritch Feast  - $40</strong>
-                <p class="description" style="display:none;">A grand platter of shadow-boar, enchanted herb sauce, and fire-kissed elven potatoes</p>
+                <p class="description" style="display:none;">A grand platter of shadow-boar, enchanted herb sauce, and fire-kissed elven potatoes
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
             <div class="menu-item desserts" onclick="toggleDescription(this)">
                 <strong>Phantom’s Delight - $10</strong>
-                <p class="description" style="display:none;">Dark chocolate mousse with blue absinthe flames.</p>
+                <p class="description" style="display:none;">Dark chocolate mousse with blue absinthe flames. 
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i>
+                </p>
             </div>
             <div class="menu-item desserts" onclick="toggleDescription(this)">
                 <strong>Demon’s Kiss Tart - $11</strong>
-                <p class="description" style="display:none;">A devilishly good raspberry and licorice tart with a touch of chili</p>
+                <p class="description" style="display:none;">A devilishly good raspberry and licorice tart with a touch of chili
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
             <div class="menu-item desserts" onclick="toggleDescription(this)">
                 <strong>Elder God’s Cheesecake - $13</strong>
-                <p class="description" style="display:none;">A velvety matcha cheesecake with void-black sesame crust</p>
+                <p class="description" style="display:none;">A velvety matcha cheesecake with void-black sesame crust
+                <br> Contains: Milk <i class="fa-solid fa-cow"></i> Gluten <i class="fa-solid fa-wheat-awn"></i>
+                </p>
             </div>
         </div>
         </div>
     </section>
 
     <section id="buffet" class="section">
-            <h2 class="titles">Lunch Buffet</h2>
+            <h2 class="titles">lunch buffet</h2>
             <p>Served Monday-Friday, 11 AM - 3 PM</p>
-            <button onclick="toggleBuffet()">Show Buffet Details</button>
+            <button id="buffet-toggle" onclick="toggleBuffet()">details</button>
         <div id="buffet-info">
-            <p>Our lunch buffet offers a mystical variety of eldritch delicacies, featuring dishes inspired by otherworldly ingredients and ancient recipes.</p>
+            <p>Our magical lunch buffet offers a mystical variety of eldritch delicacies, featuring dishes inspired by otherworldly ingredients and ancient recipes.</p>
         <ul>
             <li><strong>Shadow-Boar Ribs:</strong> Tender, slow-cooked ribs with a smoky glaze.</li>
             <li><strong>Spectral Grains:</strong> A medley of enchanted rice and quinoa, served with seasonal, magical vegetables.</li>
@@ -121,19 +145,22 @@
             <li><strong>Fey-Fruits Salad:</strong> A refreshing mix of mystical fruits, enhanced with a honey-mint dressing and served with stardust.</li>
             <li><strong>Abyssal Spiced Fish:</strong> Grilled fish fillets with a rich blend of abyssal spices and enchanted citrus.</li>
             <li><strong>Eldritch Desserts:</strong> A selection of sweet treats, including dark chocolate truffles, spectral sorbet, and cursed pastries.</li>
+            <li><strong>Drinks:</strong> Sparkling and still water, lemonade and our regular collection of sodas. Alcoholic beverages at regular pricing.</li>
         </ul>
             <p>Price: $22 per person</p>
+            <p>Special Offers:</p>
+            <p>Today: 20% off for kids under 15</p>
             <p>Join us for an ethereal experience that will transport your senses to realms unknown. Perfect for those seeking both mystery and a delightful meal.</p>
     </div>
     </section>
 
     <section id="contact" class="section">
-            <h2 class="titles">Contact Us</h2>
+            <h2 class="titles">reach out</h2>
         <form id="contact-form">
             <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
             <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+            <button type="submit">send</button>
         </form>
     </section>
 
@@ -144,9 +171,10 @@
         <div><i class="fa-brands fa-instagram"></i> Instagram </div>
         <div><i class="fa-brands fa-tiktok"></i> TikTok </div>
         <div><i class="fa-brands fa-facebook"></i> Facebook </div>
-        <p>&copy; 2025 The Eldritch Table. All Rights Reserved. </p>
+        <p>&copy; 2025 The Eldritch Table. All Rights Reserved.</p>
         <i class="fa-brands fa-bluesky"></i>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -116,7 +116,6 @@ p {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
@@ -130,7 +129,7 @@ p {
     color: var(--primary);
     text-shadow: 0px 2px 2px var(--text);
     font-weight: "bold";
-    font-size: 32px;
+    font-size: 60px;
     padding: 10px;
 }
 
@@ -222,6 +221,10 @@ footer {
 
 @media (max-width: 1500px) {
 
+.navbar ul li a {
+    font-size: 48px;
+}
+
 .logonav {
 margin-top: 10%;
 transition: 0.7ms ease;
@@ -253,7 +256,7 @@ p {
 }
 
 .navbar ul li a {
-    font-size: 28px;
+    font-size: 38px;
 }
 
 .description {

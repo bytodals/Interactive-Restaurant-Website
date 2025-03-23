@@ -68,7 +68,6 @@ p {
     color: white;
     z-index: 10;
     text-align: center;
-
 }
 
 
@@ -135,22 +134,6 @@ p {
     padding: 10px;
 }
 
-.circles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    gap: 10px;
-}
-
-.circles .img {
-    margin-top: 10vh;
-    padding:10px;
-    width: 30%;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-}
 
 button {
     font-size: 22px;
@@ -221,11 +204,19 @@ footer {
     margin-top: 20px;
     padding-bottom: 20vh;
     display: grid;
-    flex-direction: row;
+    grid-template-columns: auto;
     gap: 5px;
     object-fit:cover;
     min-width:auto;
     min-height: max-content;
+}
+
+
+.circle {
+    margin-top: 10vh;
+    clip-path: circle(50%);
+    justify-content: center;
+    box-shadow: 0px 10px 10px var(--text);
 }
 
 
@@ -322,10 +313,7 @@ header {
 .navbar ul li a {
     font-size: 24px;
 }
-
-.circles img {
-    width: 100%;
-}}
+}
 
 @media (max-width: 480px) {
 
